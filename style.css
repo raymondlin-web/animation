@@ -1,0 +1,67 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+p {
+  font-family: 'Plaster', cursive;
+  font-size: 80px;
+  animation-name: shift;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes shift {
+  0% {color: white;}
+  20% {color: red;}
+  40% {color: blue;}
+  60% {color: yellow;}
+  80% {color: indigo;}
+  100% {color: white;}
+}
+.flash {
+  position: absolute;
+}
+.move {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: cool;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes cool {
+  0% {left:1077px; top:132px;}
+  10% {left:825px; top:155px;}
+  20% {left:197px; top:361px;}
+  30% {left:1285px; top:515px;}
+  40% {left:747px; top:540px;}
+  50% {left:20px; top:309px;}
+  60% {left:1201px; top:206px;}
+  70% {left:371px; top:438px;}
+  80% {left:1157px; top:204px;}
+  90% {left:12px; top:102px;}
+  100% {left:1278px; top:496px;}
+}
+.spin {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: bean;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes bean {
+  0% {transform: rotate(10deg); left:218px; top:202px;}
+  10% {transform: rotate(200deg); left:723px; top:185px;}
+  20% {transform: rotate(980deg); left:217px; top:201px;}
+  30% {transform: rotate(30deg); left:568px; top:259px;}
+  40% {transform: rotate(380deg); left:977px; top:173px;}
+  50% {transform: rotate(120deg); left:485px; top:275px;}
+  60% {transform: rotate(580deg); left:630px; top:95px;}
+  70% {transform: rotate(30deg); left:486px; top:223px;}
+  80% {transform: rotate(370deg); left:1013px; top:117px;}
+  90% {transform: rotate(840deg); left:629px; top:19px;}
+  100% {transform: rotate(10deg); left:687px; top:276px;}
+}
